@@ -1,0 +1,514 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Plus Jakarta Sans',sans-serif;
+    background:#f7f3ef;
+    color:#2d2520;
+}
+
+.layout{
+    display:flex;
+    min-height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width:280px;
+    background:#fff;
+    border-right:1px solid #eadfd7;
+    padding:30px 18px;
+    position:fixed;
+    height:100vh;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:45px;
+}
+
+.logo i{
+    background:#7a4b32;
+    color:#fff;
+    padding:15px;
+    border-radius:16px;
+    font-size:20px;
+}
+
+.logo h2{
+    font-size:26px;
+    font-weight:800;
+    color:#3a2a23;
+}
+
+.logo p{
+    color:#7d6a5f;
+    font-size:14px;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.sidebar nav a{
+    text-decoration:none;
+    color:#7d6a5f;
+    font-size:17px;
+    font-weight:700;
+    padding:16px 18px;
+    border-radius:16px;
+    transition:0.3s;
+}
+
+.sidebar nav a i{
+    width:25px;
+}
+
+.sidebar nav a.active,
+.sidebar nav a:hover{
+    background:#7a4b32;
+    color:#fff;
+}
+
+/* CONTENT */
+
+.content{
+    margin-left:280px;
+    width:calc(100% - 280px);
+}
+
+/* TOPBAR */
+
+.topbar{
+    height:96px;
+    background:#fff;
+    border-bottom:1px solid #eadfd7;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 36px;
+}
+
+.search-box{
+    width:620px;
+    background:#f1dfd2;
+    border-radius:18px;
+    padding:16px 20px;
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.search-box i{
+    color:#7a4b32;
+}
+
+.search-box input{
+    border:none;
+    outline:none;
+    background:transparent;
+    width:100%;
+    font-family:inherit;
+    font-size:16px;
+    color:#3a2a23;
+}
+
+/* USER INFO */
+
+.user-info{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.user-info strong{
+    font-size:16px;
+    color:#3a2a23;
+}
+
+.user-info p{
+    color:#7d6a5f;
+    font-size:14px;
+}
+
+/* PROFILE IMAGE */
+
+.top-profile-img{
+    width:48px !important;
+    height:48px !important;
+    border-radius:50%;
+    object-fit:cover;
+    flex-shrink:0;
+    border:2px solid #eadfd7;
+}
+
+/* INITIAL LETTER */
+
+.initial-circle{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:#f1dfd2;
+    color:#7a4b32;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:800;
+    font-size:20px;
+    text-transform:uppercase;
+    flex-shrink:0;
+}
+
+/* PAGE TITLE */
+
+.page-title{
+    padding:40px 38px 20px;
+}
+
+.page-title h1{
+    font-size:42px;
+    font-weight:800;
+    color:#3a2a23;
+}
+
+.page-title p{
+    color:#7d6a5f;
+    margin-top:8px;
+    font-size:18px;
+}
+
+/* STATS */
+
+.stats-grid{
+    padding:10px 38px 25px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.stat-card{
+    background:#fff;
+    padding:28px;
+    border-radius:20px;
+    border:1px solid #eadfd7;
+    box-shadow:0 12px 30px rgba(73,45,30,0.06);
+}
+
+.stat-card i{
+    background:#f1dfd2;
+    color:#7a4b32;
+    padding:14px;
+    border-radius:14px;
+    font-size:20px;
+    margin-bottom:18px;
+}
+
+.stat-card p{
+    color:#7d6a5f;
+    font-weight:600;
+}
+
+.stat-card h2{
+    margin-top:8px;
+    color:#3a2a23;
+    font-size:38px;
+}
+
+/* SECTION HEAD */
+
+.section-head{
+    padding:15px 38px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.section-head h2{
+    color:#3a2a23;
+    font-size:30px;
+}
+
+.section-head p{
+    color:#7d6a5f;
+    margin-top:5px;
+}
+
+.section-head a{
+    background:#7a4b32;
+    color:#fff;
+    text-decoration:none;
+    padding:13px 24px;
+    border-radius:13px;
+    font-weight:800;
+}
+
+/* CLOTHES GRID */
+
+.clothes-grid{
+    padding:20px 38px 45px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+}
+
+/.clothes-grid {
+    padding: 20px 38px 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 28px;
+}
+
+.cloth-card {
+    width: 350px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #eadfd7;
+    box-shadow: 0 10px 30px rgba(73,45,30,0.06);
+}
+
+.cloth-image-box {
+    width: 100%;
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #3a2a23, #c28b62);
+}
+
+.cloth-image-box img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.cloth-info {
+    padding: 22px;
+    background: #fff;
+}
+
+.cloth-info h3 {
+    font-size: 22px;
+    color: #3a2a23;
+    margin-bottom: 10px;
+}
+
+.cloth-info .description {
+    color: #7d6a5f;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.cloth-info .price {
+    color: #7a4b32;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #fff;
+    color: #3a2a23;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.available {
+    display: block;
+    color: #16763b;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.unavailable {
+    display: block;
+    color: #b3261e;
+    font-weight: 800;
+}
+
+.rent-btn {
+    display: inline-block;
+    background: #7a4b32;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 800;
+}
+
+.top-profile-img {
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.initial-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #f1dfd2;
+    color: #7a4b32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+/* STATUS */
+
+.available{
+    color:#16763b;
+    font-weight:800;
+}
+
+.unavailable{
+    color:#b3261e;
+    font-weight:800;
+}
+
+/* BUTTON */
+
+.rent-btn{
+    display:inline-block;
+    margin-top:16px;
+    background:#7a4b32;
+    color:#fff;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:12px;
+    font-weight:800;
+    transition:0.3s;
+}
+.cloth-card {
+    width: 100%;
+    max-width: 370px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #eadfd7;
+    box-shadow: 0 10px 30px rgba(73,45,30,0.06);
+}
+
+.cloth-image {
+    height: 260px !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #3a2a23, #c28b62);
+}
+
+.cloth-image img {
+    width: 100% !important;
+    height: 260px !important;
+    object-fit: cover !important;
+    display: block;
+}
+
+.cloth-info {
+    display: block !important;
+    padding: 22px;
+    background: #fff;
+}
+
+.cloth-info h3 {
+    font-size: 22px;
+    color: #3a2a23;
+    margin-bottom: 10px;
+}
+
+.cloth-info .description,
+.cloth-desc {
+    color: #7d6a5f !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.cloth-info .price,
+.cloth-info p.price {
+    color: #7a4b32 !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    margin-bottom: 12px;
+}
+
+.rent-btn {
+    display: inline-block !important;
+    margin-top: 14px;
+    background: #7a4b32;
+    color: #fff !important;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 800;
+}
+.rent-btn:hover{
+    background:#5e3925;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+    .clothes-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:850px){
+
+    .layout{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        position:static;
+        width:100%;
+        height:auto;
+    }
+
+    .content{
+        margin-left:0;
+        width:100%;
+    }
+
+    .topbar{
+        flex-direction:column;
+        gap:18px;
+        height:auto;
+        padding:20px;
+    }
+
+    .search-box{
+        width:100%;
+    }
+
+    .clothes-grid{
+        grid-template-columns:1fr;
+    }
+}

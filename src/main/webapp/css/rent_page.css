@@ -1,0 +1,156 @@
+.rent-wrapper {
+    padding: 42px;
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 30px;
+}
+
+.cloth-preview,
+.rent-card {
+    background: #fff;
+    border-radius: 22px;
+    border: 1px solid #eadfd7;
+    box-shadow: 0 15px 40px rgba(73, 45, 30, 0.08);
+}
+
+.cloth-preview {
+    overflow: hidden;
+}
+
+.cloth-image-large {
+    height: 370px;
+    background: linear-gradient(135deg, #3a2a23, #c28b62);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cloth-image-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cloth-image-large i {
+    font-size: 90px;
+    color: #fff;
+}
+
+.cloth-detail {
+    padding: 30px;
+}
+
+.category-badge {
+    background: #f1dfd2;
+    color: #7a4b32;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.cloth-detail h1 {
+    margin-top: 18px;
+    font-size: 34px;
+    color: #3a2a23;
+}
+
+.description {
+    margin-top: 12px;
+    color: #7d6a5f;
+    line-height: 1.7;
+}
+
+.detail-list {
+    margin-top: 22px;
+    display: grid;
+    gap: 12px;
+}
+
+.detail-list p {
+    color: #7d6a5f;
+}
+
+.detail-list strong {
+    color: #3a2a23;
+}
+
+.rent-card {
+    padding: 32px;
+    height: fit-content;
+}
+
+.rent-card h2 {
+    font-size: 28px;
+    color: #3a2a23;
+}
+
+.rent-card > p {
+    color: #7d6a5f;
+    margin: 8px 0 24px;
+}
+
+.rent-card label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 800;
+    color: #3a2a23;
+}
+
+.rent-card input {
+    width: 100%;
+    border: 1px solid #e1d6cf;
+    border-radius: 13px;
+    padding: 14px;
+    margin-bottom: 18px;
+    font-family: inherit;
+    outline: none;
+}
+
+.price-note {
+    background: #f7f3ef;
+    color: #7d6a5f;
+    padding: 14px;
+    border-radius: 13px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.price-note i {
+    color: #7a4b32;
+    margin-right: 6px;
+}
+
+.rent-card button {
+    width: 100%;
+    border: none;
+    background: #7a4b32;
+    color: #fff;
+    padding: 15px;
+    border-radius: 13px;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #7a4b32;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.top-profile-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 950px) {
+    .rent-wrapper {
+        grid-template-columns: 1fr;
+    }
+}@charset "UTF-8";

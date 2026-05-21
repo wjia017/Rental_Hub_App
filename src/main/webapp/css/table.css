@@ -1,0 +1,74 @@
+.table-card {
+    margin: 20px 38px 45px;
+    background: #fff;
+    padding: 22px;
+    border-radius: 20px;
+    border: 1px solid #eadfd7;
+    box-shadow: 0 12px 30px rgba(73, 45, 30, 0.06);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    background: #f1dfd2;
+    color: #3a2a23;
+    padding: 15px;
+    font-size: 14px;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eee4dd;
+    font-size: 14px;
+    color: #3a2a23;
+}
+
+.badge,
+.status {
+    background: #f1dfd2;
+    color: #7a4b32;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.action-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.action {
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 9px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.edit {
+    background: #eaf8ef;
+    color: #16763b;
+}
+
+.view {
+    background: #f1dfd2;
+    color: #7a4b32;
+}
+
+.delete {
+    background: #ffecec;
+    color: #b3261e;
+}
+
+.empty {
+    text-align: center;
+    color: #7d6a5f;
+}
