@@ -1,0 +1,125 @@
+@charset "UTF-8";
+.table-section {
+    padding: 10px 40px 50px;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.table-search {
+    width: 430px;
+    height: 52px;
+    background: #fff;
+    border: 1px solid #eadfd7;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    gap: 12px;
+}
+
+.table-search i {
+    color: #7a4b32;
+}
+
+.table-search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.add-btn {
+    background: #7a4b32;
+    color: #fff;
+    padding: 15px 24px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.table-card {
+    background: #fff;
+    border: 1px solid #eadfd7;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 16px 35px rgba(73, 45, 30, 0.08);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #f1dfd2;
+}
+
+th {
+    padding: 18px;
+    text-align: left;
+    color: #3a2a23;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+td {
+    padding: 18px;
+    border-top: 1px solid #eee4dd;
+    color: #3a2a23;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.status {
+    padding: 7px 14px;
+    border-radius: 18px;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.available {
+    background: #eaf8ef;
+    color: #16763b;
+}
+
+.rented {
+    background: #fff0e8;
+    color: #c24d09;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-btn {
+    background: #f1dfd2;
+    color: #7a4b32;
+}
+
+.delete-btn {
+    background: #ffecec;
+    color: #b3261e;
+}
